@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        android:hint=""/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="4">
+
+
+        <Button android:text="MC" android:id="@+id/MC"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="M+" android:id="@+id/MPlus"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="M-" android:id="@+id/MMinus"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="MR" android:id="@+id/MR"
+            android:layout_gravity="fill_horizontal"/>
+
+        <Button android:text="C" android:id="@+id/C"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="+" android:id="@+id/Plus"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="-" android:id="@+id/Minus"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="X" android:id="@+id/X"
+            android:layout_gravity="fill_horizontal"/>
+
+        <Button android:text="7" android:id="@+id/Seven"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="8" android:id="@+id/Eight"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="9" android:id="@+id/Nine"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="-" android:id="@+id/Minus2"
+            android:layout_gravity="fill_horizontal"/>
+
+        <Button android:text="4" android:id="@+id/Four"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="5" android:id="@+id/Five"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="6" android:id="@+id/Six"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="+" android:id="@+id/Plus2"
+            android:layout_gravity="fill_horizontal"/>
+
+        <Button android:text="1" android:id="@+id/One"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="2" android:id="@+id/Two"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="3" android:id="@+id/Three"
+            android:layout_gravity="fill_horizontal"/>
+
+        <Button android:text="=" android:layout_rowSpan="2" android:layout_gravity="fill" android:id="@+id/Equals" />
+
+        <Button android:text="0" android:layout_columnSpan="2" android:layout_gravity="fill_horizontal" android:id="@+id/Zero" />
+
+        <Button android:text="." android:id="@+id/Dot"
+            android:layout_gravity="fill_horizontal"/>
+
+        <Space android:layout_width="0dp" android:layout_height="0dp" />
+
+    </GridLayout>
+
+</LinearLayout>
